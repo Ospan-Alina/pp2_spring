@@ -12,14 +12,11 @@ print(10 < 9)
 False
 
 #4
+print(bool("abc"))
 
+True
 
 #5
+print(bool(0))
 
-#6
-
-#7
-
-#8
-
-#9
+False
