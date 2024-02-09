@@ -1,8 +1,10 @@
 def reverse(txt):
-    txt = txt[::-1]
-    print(txt)
+    word = txt.split()
+    words = word[::-1]
+    sent = ' '.join(words)
+    return sent
 
 txt = input()
-reverse(txt)
+print(reverse(txt))
 
 

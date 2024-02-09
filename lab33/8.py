@@ -4,7 +4,7 @@ def spy_game(mystring):
     else:
         print('False')
         
-numbers = [1,2,4,0,0,7,5]
+numbers = [1,7,2,0,4,5,0]
 mystring = ""
 for digit in numbers:
     mystring += str(digit)
