@@ -1,14 +1,13 @@
 def spy_game(nums):
-   
-    zero_count = 0
+    found_zero1 = False
+    found_zero2 = False
     
     for num in nums:
-        if num == 0:
-            zero_count += 1
-        elif num == 7:
-            if zero_count >= 2:
-                zero_count -= 1
-        if zero_count > 1:
+        if num == 0 and not found_zero1:
+            found_zero1 = True
+        elif num == 0 and found_zero1 and not found_zero2:
+            found_zero2 = True
+        elif num == 7 and found_zero1 and found_zero2:
             return True
     return False
 
