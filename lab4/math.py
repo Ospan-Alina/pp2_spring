@@ -1,5 +1,5 @@
 #1
-'''
+
 import math
 
 n = int(input())
@@ -32,4 +32,3 @@ b = int(input())
 Area = a * b
 
 print(Area)
-'''
