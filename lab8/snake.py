@@ -4,6 +4,7 @@ import random
 
 pygame.init()
 
+n = random.randint(1, 10)
 class Snake(object):
     def __init__(self):
         self.length = 1
@@ -117,13 +118,19 @@ def main():
     
     score = 0
     while True:
-        clock.tick(10)
+        fps = 10
+        clock.tick(fps)
         snake.handle_keys()
         drawGrid(surface)
         snake.move()
         if snake.get_head_position() == food.position:
             snake.length += 1
+            if snake.length > 3:
+                snake.length += n
+                fps +=2
             score += 1
+            if score > 3:
+                score += n
             food.rand()
         snake.draw(surface)
         food.draw(surface)
