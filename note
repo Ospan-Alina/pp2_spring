@@ -1,0 +1,11 @@
+phone
+1. insert
+2. update
+3.delete
+"work"
+
+snake
+walls
+level, depend to score
+create new user, if it exist already change only score
+pause
